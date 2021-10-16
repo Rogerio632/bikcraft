@@ -38,7 +38,7 @@ section.contato {
   margin-bottom: 20px;
   outline: none;
   font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 .contato_form button {
   padding: 7px 40px;
