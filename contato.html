@@ -38,15 +38,19 @@
   </section>
 
   <section class="contato container fadeInDown" data-anime="1200">
-    <form action="" id="form_contato" class="contato_form grid-8">
+    <form action="" id="form_contato" method="POST" action="./enviar-sendgrid.php" class="contato_form formphp grid-8">
       <label for="nome">Nome</label>
-      <input type="text" id="nome">
+      <input type="text" name="nome" id="nome" required>
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="text" name="email" id="email" required>
+
+      <label class="nao-aparece">Se você não é um robô, não mude este campo</label>
+      <input name="dontchange" type="text" value="http://" class="nao-aparece">
+
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
-      <label for="espec">Especificações</label>
-      <textarea id="espec"></textarea>
+      <input type="text" name="telefone" id="telefone">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
       <button type="submit" class="btn btn-preto">Enviar</button>
     </form>
     <div class="contato_dados grid-8">
